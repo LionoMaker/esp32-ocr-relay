@@ -5,7 +5,8 @@ import os
 app = Flask(__name__)
 
 # Read API key from environment variable (secure way)
-API_KEY = os.getenv("AIzaSyCh1q1czgJx-y_fryIL7lShKqjIBrNDkzA") 
+API_KEY = os.getenv("GOOGLE_API_KEY")
+#API_KEY = os.environ.get("GOOGLE_API_KEY")
 
 @app.route("/")
 def home():
